@@ -1,0 +1,44 @@
+[
+    {
+        "id": 1,
+        "name": "Sunset view of beautiful lakeside resident",
+        "img": "https://i.ibb.co/QjmfghS/package-3.jpg",
+        "desc": "You can rest assured we’ll have the capacity to make you feel comfortable as we leave the techy stuff and we focus on helping people.",
+        "price": "239"
+    },
+    {
+        "id": 2,
+        "name": "Experience the natural beauty of island",
+        "img": "https://i.ibb.co/1m3WGbr/package-2.jpg",
+        "desc": "You can rest assured we’ll have the capacity to make you feel comfortable as we leave the techy stuff and we focus on helping people.",
+        "price": "239"
+    },
+    {
+        "id": 3,
+        "name": "Vacation to the water city of Portugal",
+        "img": "https://i.ibb.co/FBmgLGZ/package-1.jpg",
+        "desc": "You can rest assured we’ll have the capacity to make you feel comfortable as we leave the techy stuff and we focus on helping people",
+        "price": "239"
+    },
+    {
+        "id": 4,
+        "name": "Summer holiday to the Oxolotan River",
+        "img": "https://i.ibb.co/CtW11d2/package-1.png",
+        "desc": "You can rest assured we’ll have the capacity to make you feel comfortable as we leave the techy stuff and we focus on helping people.",
+        "price": "239"
+    },
+    {
+        "id": 5,
+        "name": "Beautiful season of the rural village",
+        "img": "https://i.ibb.co/XSR2y5G/package-5.jpg",
+        "desc": "You can rest assured we’ll have the capacity to make you feel comfortable as we leave the techy stuff and we focus on helping people.",
+        "price": "239"
+    },
+    {
+        "id": 6,
+        "name": "Trekking to the base camp of mountain",
+        "img": "https://i.ibb.co/9s15f3K/package-4.jpg",
+        "desc": "You can rest assured we’ll have the capacity to make you feel comfortable as we leave the techy stuff and we focus on helping people.",
+        "price": "239"
+    }
+]

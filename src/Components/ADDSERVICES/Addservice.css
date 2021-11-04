@@ -1,0 +1,14 @@
+input, textarea {
+    width: 100%;
+    margin-bottom: 7px;
+    padding: 4px 10px;
+    font-weight: bold;
+}
+
+input[type="submit"] {
+     width: 200px;
+     border-radius: 10px;
+     text-align: center;
+     display: block;
+     margin: auto;
+}

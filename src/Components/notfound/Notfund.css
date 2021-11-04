@@ -1,0 +1,12 @@
+.containerr{padding: 100px;}
+.notfound{
+
+    width: 100%;
+    height: 100vh;
+    background-image: url('../../images/notfound/Notfound.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: auto;
+    box-sizing: border-box;
+   
+}
