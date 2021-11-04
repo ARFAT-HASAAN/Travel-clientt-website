@@ -11,7 +11,7 @@ const Orderplace = () => {
     const { productId } = useParams()
 
     useEffect(() => {
-        fetch('https://warm-taiga-83993.herokuapp.com//services')
+        fetch('https://warm-taiga-83993.herokuapp.com/services')
             .then(res => res.json())
             .then(data => setProduct(data))
     }, [])

@@ -5,7 +5,7 @@ import './Addservice.css'
 const ADDSERVICE = () => {
     const { register, handleSubmit, reset, formState: { errors } } = useForm();
     const onSubmit = data => {
-        fetch('https://warm-taiga-83993.herokuapp.com//services',
+        fetch('https://warm-taiga-83993.herokuapp.com/services',
             {
                 method: "POST",
                 headers: {

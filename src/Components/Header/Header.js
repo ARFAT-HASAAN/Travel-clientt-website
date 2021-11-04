@@ -20,17 +20,14 @@ const Header = () => {
 
                     {/* nabar logo  */}
                     <div className='flex space-x-3'>
-                        <div className="logo flex items-center">
-                            <svg className='h-8 w-12 mr-2' xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 14v3m4-3v3m4-3v3M3 21h18M3 10h18M3 7l9-4 9 4M4 10h16v11H4V10z" />
-                            </svg>
+                        <div className="logo">
 
-                            <span className='font-bold text-3xl'>VFX Hotel</span>
+                            <span className='font-bold text-2xl'>Travelicious</span>
 
                         </div>
 
                         {/* primary nav  */}
-                        <div className="primary-nav mx-4 items-center hidden lg:flex">
+                        <div className="primary-nav mx-4 items-center flex align-center hidden md:flex ">
 
                             <Link className='mr-6 font-bold' to='/home'>Home</Link>
                             <HashLink className='mr-6 font-bold' smooth to="/home#packages">Packages</HashLink>
@@ -48,7 +45,7 @@ const Header = () => {
 
 
                     {/* secondary nav */}
-                    <div className="secondary-nav hidden lg:flex">
+                    <div className="secondary-nav hidden md:flex  ">
 
                         {user?.email ? <button onClick={logout} className=' px-2 py-1 rounded-lg bg-green-400 font-bold mx-2  shadow'>log out</button>
                             :
@@ -67,7 +64,7 @@ const Header = () => {
 
                     {/* mobaile manu  toggle */}
 
-                    <div className='flex lg:hidden' >
+                    <div className='flex md:hidden' >
                         {/* togle btn  */}
                         <button onClick={() => {
                             const manu = document.getElementById('mobile_manu')
@@ -85,7 +82,7 @@ const Header = () => {
 
                 <div id='mobile_manu' className='hidden text-center'>
 
-                    <div className="primary-nav mx-4 items-center text-white">
+                    <div className="primary-nav mx-4 items-center text-white block md:hidden">
 
 
                         <Link className='m-6  block font-bold' to='/home'>Home</Link>
@@ -98,7 +95,7 @@ const Header = () => {
 
                     </div>
 
-                    <div className="secondary-nav ">
+                    <div className="secondary-nav block md:hidden ">
 
 
                         {user?.email ? <button onClick={logout} className=' px-2 py-1 rounded-lg bg-green-400 font-bold mx-2  shadow'>log out</button>

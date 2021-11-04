@@ -51,6 +51,7 @@ function App() {
             <Route exact path='/Details'>
               <Details></Details>
             </Route>
+
             <PrivateRoute exact path='/orderPlace/:productId'>
               <Orderplace></Orderplace>
             </PrivateRoute>

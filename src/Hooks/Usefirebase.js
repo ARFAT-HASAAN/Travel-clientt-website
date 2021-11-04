@@ -4,15 +4,16 @@ import FirebaseInitialized from "../firebase/Firebaseinitialized";
 
 FirebaseInitialized()
 const Usefirebase = () => {
-
-    const [user, setUser] = useState({})
     const [isloading, setloading] = useState(true)
+    const [user, setUser] = useState({})
+
 
 
     const auth = getAuth();
     const Googleprovider = new GoogleAuthProvider();
 
     const SingWIthGoogel = () => {
+        setloading(true)
         return signInWithPopup(auth, Googleprovider)
             // .then(resutl => {
             //     setUser(resutl.user)
@@ -32,6 +33,8 @@ const Usefirebase = () => {
             else {
                 setUser()
             }
+
+            setloading(false)
         });
 
         return () => unsubcribe;
@@ -40,6 +43,7 @@ const Usefirebase = () => {
 
 
     const logout = () => {
+        setloading(true)
         signOut(auth)
             .then(() => {
                 setUser({})

@@ -3,24 +3,24 @@ import React from 'react';
 const Benifits = () => {
     return (
         <div>
-            <div className='w-1/2 mx-auto p-12 text-center '>
-                <h2 className='text-2xl py-1'>WHY CONTACT US?</h2>
-                <h3 className='text-6xl font-bold py-2'>We are best in our field. </h3>
+            <div className='w-1/2 mx-auto p-4 md:p-8 text-center '>
+                <h2 className='text-1xl md:text-2xl py-1'>WHY CONTACT US?</h2>
+                <h3 className='text-1xl  md:text-4xl font-bold py-2'>We are best in our field. </h3>
 
             </div>
 
 
-            <div className='grid grid-cols-4 gap-4 w-4/5 mx-auto'>
+            <div className='grid  sm:grid-cols-1 md:grid-cols-4 gap-4 w-4/5 mx-auto my-4'>
 
-                <div className='text-center shadow-lg p-5 rounded-lg'>
+                <div className='text-center shadow-lg p-3 rounded-lg'>
                     <div className='text-center'>
                         <svg className='w-24 h-24 mx-auto text-blue-900' xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9" />
                         </svg>
                     </div>
-                    <h2 className='font-bold text-1.5xl py-2'>We Work
+                    <h2 className='font-bold text-sm text-left py-2'>We Work
                         Around the World</h2>
-                    <p className='text-gray-600'>
+                    <p className='text-gray-600 text-left'>
                         Habitasse duis senectus aliquam enim id imperdiet.
                     </p>
                 </div>
@@ -31,11 +31,11 @@ const Benifits = () => {
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4" />
                         </svg>
                     </div>
-                    <h2 className='font-bold text-1.5xl py-2'>
+                    <h2 className='font-bold text-sm text-left py-2'>
                         We Move
                         Fast and Safe
                     </h2>
-                    <p className='text-gray-600'>
+                    <p t className='text-gray-600 text-left'>
                         Habitasse duis senectus aliquam enim id imperdiet.
                     </p>
                 </div>
@@ -48,11 +48,11 @@ const Benifits = () => {
                         </svg>
                     </div>
 
-                    <h2 className='font-bold text-1.5xl py-2'>
+                    <h2 className='font-bold text-sm py-2 text-left'>
                         We Do
                         Everything Legally
                     </h2>
-                    <p className='text-gray-600'>
+                    <p className='text-gray-600 text-left'>
                         Habitasse duis senectus aliquam enim id imperdiet.
                     </p>
                 </div>
@@ -63,11 +63,11 @@ const Benifits = () => {
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
                         </svg>
                     </div>
-                    <h2 className='font-bold text-1.5xl py-2'>
+                    <h2 className='font-bold text-sm text-left py-2'>
                         We Offer
                         The Best Residence
                     </h2>
-                    <p className='text-gray-600'>
+                    <p className='text-gray-600 text-left'>
                         Habitasse duis senectus aliquam enim id imperdiet.
                     </p>
                 </div>
