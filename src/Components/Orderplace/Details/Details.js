@@ -1,11 +1,48 @@
 import React from 'react';
 import { useForm } from "react-hook-form";
 import { Link } from 'react-router-dom';
-
+import { useParams } from 'react-router';
+import { useState } from 'react';
+import { useEffect } from 'react';
+import { stringify } from 'postcss';
 const Details = () => {
+    const { productId } = useParams()
+    const [orderproduct, Setoroderproduct] = useState([])
+    const [sellectPhoto, setSellectPhoto] = useState({})
+
+
+    useEffect(() => {
+        fetch('https://warm-taiga-83993.herokuapp.com/services')
+            .then(res => res.json())
+            .then(data => Setoroderproduct(data))
+    }, [])
+
+    useEffect(() => {
+        const ChoceProduct = orderproduct.find(product => product?._id === productId)
+
+        setSellectPhoto(ChoceProduct)
+        // console.log(ChoceProduct)
+    }, [orderproduct, productId])
+
+
+    // use form hook forms
     const { register, handleSubmit, watch, formState: { errors } } = useForm();
     const onSubmit = data => {
-        console.log(data);
+
+        fetch('http://localhost:2000/orders', {
+            method: "POST",
+            headers: {
+                "content-type": "application/json"
+            },
+
+            body: JSON.stringify(sellectPhoto)
+        })
+
+            .then(res => res.json())
+            .then(data => console.log(data))
+
+
+        // console.log(data);
     }
 
     return (
@@ -19,7 +56,7 @@ const Details = () => {
                 <input type="tel" className='border border-2 border-gray-400' placeholder='Phone' {...register("Phone")} />
 
                 <input type="pass" className='border border-2 border-gray-400' placeholder='pass' {...register("pass")} />
-                <input type="submit" />
+                <input type="submit" value='sumbit' />
             </form >
 
 

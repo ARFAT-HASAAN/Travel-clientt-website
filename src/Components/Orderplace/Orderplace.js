@@ -37,7 +37,7 @@ const Orderplace = () => {
                     <div className='text-center '>
                         <h2 className='font-bold text-2xl'>$ {ChoceProduct?.price}</h2>
 
-                        <Link to='/Details'> <button className='font-bold py-1 w-28   px-3 bg-pink-600 text-white shadow-sm rounded-lg my-2'>Order place</button> </Link>
+                        <Link to={`/Details/${ChoceProduct?._id}`}> <button className='font-bold py-1 w-28   px-3 bg-pink-600 text-white shadow-sm rounded-lg my-2'>Order place</button> </Link>
 
                     </div>
 

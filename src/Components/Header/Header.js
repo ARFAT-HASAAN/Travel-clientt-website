@@ -31,7 +31,10 @@ const Header = () => {
 
                             <Link className='mr-6 font-bold' to='/home'>Home</Link>
                             <HashLink className='mr-6 font-bold' smooth to="/home#packages">Packages</HashLink>
-                            {user?.email && <Link className='m-6  block font-bold' to='/AddService'>Add Service</Link>}
+                            {user?.email && <Link className='m-6  block font-bold' to='/AddService'>Add Service</Link>
+
+                            }
+                            {user?.email && <Link className='m-6  block font-bold' to='/Orders'>Orders</Link>}
                             <HashLink className='mr-6 font-bold' smooth to="/home#Contact">Contact</HashLink>
                             <HashLink className='mr-6 font-bold' smooth to="/home#Aboute">Aboute</HashLink>
 
@@ -87,7 +90,12 @@ const Header = () => {
 
                         <Link className='m-6  block font-bold' to='/home'>Home</Link>
                         <HashLink className='mr-6 font-bold' smooth to="/home#packages">Packages</HashLink>
-                        {user?.email && <Link className='m-6  block font-bold' to='/AddService'>Add Service</Link>}
+                        {user?.email &&
+                            <Link className='m-6  block font-bold' to='/AddService'>Add Service</Link>
+
+                        }
+                        {user?.email && <Link className='m-6  block font-bold' to='/Orders'>Orders</Link>}
+
                         <HashLink className='m-6  block font-bold' smooth to="/home#Contact">Contact</HashLink>
                         <HashLink className='m-6  block font-bold' smooth to="/home#Aboute">About</HashLink>
 

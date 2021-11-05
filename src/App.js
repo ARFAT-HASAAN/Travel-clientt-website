@@ -17,6 +17,7 @@ import Login from "./Components/Login/Login";
 import Notfound from "./Components/notfound/Notfound";
 import Details from "./Components/Orderplace/Details/Details";
 import Orderplace from "./Components/Orderplace/Orderplace";
+import Orders from "./Components/Orders/Orders";
 import Packages from "./Components/packages/Packages";
 import PrivateRoute from "./Components/privateRoute/PrivateRoute";
 
@@ -48,7 +49,7 @@ function App() {
               <ADDSERVICE></ADDSERVICE>
             </Route>
 
-            <Route exact path='/Details'>
+            <Route exact path='/Details/:productId'>
               <Details></Details>
             </Route>
 
@@ -56,6 +57,9 @@ function App() {
               <Orderplace></Orderplace>
             </PrivateRoute>
 
+            <PrivateRoute exact path='/orders'>
+              <Orders></Orders>
+            </PrivateRoute>
             <Route exact path='*'>
               <Notfound></Notfound>
             </Route>
