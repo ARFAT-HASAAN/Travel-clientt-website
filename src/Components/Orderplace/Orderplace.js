@@ -1,7 +1,8 @@
 import React from 'react';
 import { useParams } from 'react-router';
 import { Link } from 'react-router-dom';
-import { useEffect, useState } from 'react/cjs/react.development';
+import { useEffect, useState } from "react"
+// import { useEffect, useState } from 'react/cjs/react.development';
 
 const Orderplace = () => {
 
@@ -17,10 +18,10 @@ const Orderplace = () => {
     }, [])
 
     useEffect(() => {
-        const ChoceProduct = products.find(product => product._id === productId)
+        const ChoceProduct = products.find(product => product?._id === productId)
 
         SetChooseProduct(ChoceProduct)
-        console.log(ChoceProduct)
+        // console.log(ChoceProduct)
     }, [products, productId])
 
 

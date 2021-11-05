@@ -19,10 +19,10 @@ const Header = () => {
                 <div className='max-w-6xl mx-auto text-white flex justify-between p-4 items-center '>
 
                     {/* nabar logo  */}
-                    <div className='flex space-x-3'>
+                    <div className='flex items-center'>
                         <div className="logo">
 
-                            <span className='font-bold text-2xl'>Travelicious</span>
+                            <span className='font-bold text-2xl flex'>Travelicious</span>
 
                         </div>
 
@@ -31,7 +31,7 @@ const Header = () => {
 
                             <Link className='mr-6 font-bold' to='/home'>Home</Link>
                             <HashLink className='mr-6 font-bold' smooth to="/home#packages">Packages</HashLink>
-                            <Link className='mr-6 font-bold' to='/AddService'>Add Service</Link>
+                            {user?.email && <Link className='m-6  block font-bold' to='/AddService'>Add Service</Link>}
                             <HashLink className='mr-6 font-bold' smooth to="/home#Contact">Contact</HashLink>
                             <HashLink className='mr-6 font-bold' smooth to="/home#Aboute">Aboute</HashLink>
 
@@ -87,9 +87,9 @@ const Header = () => {
 
                         <Link className='m-6  block font-bold' to='/home'>Home</Link>
                         <HashLink className='mr-6 font-bold' smooth to="/home#packages">Packages</HashLink>
-                        <Link className='m-6  block font-bold' to='/AddService'>Add Service</Link>
+                        {user?.email && <Link className='m-6  block font-bold' to='/AddService'>Add Service</Link>}
                         <HashLink className='m-6  block font-bold' smooth to="/home#Contact">Contact</HashLink>
-                        <HashLink className='m-6  block font-bold' smooth to="/home#Aboute">Aboute</HashLink>
+                        <HashLink className='m-6  block font-bold' smooth to="/home#Aboute">About</HashLink>
 
 
 
