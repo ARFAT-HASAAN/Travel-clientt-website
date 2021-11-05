@@ -20,7 +20,7 @@ const Them = () => {
             <div className='row w-4/5 mx-auto'>
 
                 <div className='column'>
-                    <img className='' src={themepic6} alt="" />
+                    <img className='w-full' src={themepic6} alt="" />
                     <img className='w-full' src={themepic2} alt="" />
                     <img className='w-full' src={themepic3} alt="" />
                     <img className='w-full' src={theme} alt="" />
@@ -29,8 +29,8 @@ const Them = () => {
                 </div>
 
                 <div className='column'>
-                    <img className='' src={themepic4} alt="" />
-                    <img className='' src={themepic5} alt="" />
+                    <img className='w-full' src={themepic4} alt="" />
+                    <img className='w-full' src={themepic5} alt="" />
                     <img className='w-full ' src={themepic1} alt="" />
 
 
