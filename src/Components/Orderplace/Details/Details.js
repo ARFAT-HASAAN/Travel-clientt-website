@@ -40,6 +40,7 @@ const Details = () => {
 
             .then(res => res.json())
             .then(data => {
+                console.log(data)
                 if (data.acknowledged) {
                     alert('order successfully')
                     reset()
@@ -60,7 +61,7 @@ const Details = () => {
                 <input type='email' className='border border-2 border-gray-400' placeholder='Email'  {...register("email")} />
                 <input type="tel" className='border border-2 border-gray-400' placeholder='Phone' {...register("Phone")} />
 
-                <input type="pass" className='border border-2 border-gray-400' placeholder='pass' {...register("pass")} />
+                <input type="text" className='border border-2 border-gray-400' placeholder='Address' {...register("address")} />
                 <input type="submit" value='sumbit' />
             </form >
 
