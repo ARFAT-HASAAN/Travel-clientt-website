@@ -26,10 +26,10 @@ const Details = () => {
 
 
     // use form hook forms
-    const { register, handleSubmit, watch, formState: { errors } } = useForm();
+    const { register, handleSubmit, reset, watch, formState: { errors } } = useForm();
     const onSubmit = data => {
 
-        fetch('http://localhost:2000/orders', {
+        fetch('https://warm-taiga-83993.herokuapp.com/orders', {
             method: "POST",
             headers: {
                 "content-type": "application/json"
@@ -39,10 +39,15 @@ const Details = () => {
         })
 
             .then(res => res.json())
-            .then(data => console.log(data))
+            .then(data => {
+                if (data.acknowledged) {
+                    alert('order successfully')
+                    reset()
+                }
+            })
 
 
-        // console.log(data);
+
     }
 
     return (
